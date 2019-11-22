@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <script>
+        document.addEventListener("DOMContentLoaded", (_) => {
+            console.log("here")
+            const prefixes = [
+                "$date=",
+                "&date=",
+                "var date=",
+                "let date=",
+                "const date=",
+                "date:"
+            ];
+
+            const eventTitle = document.getElementById("event-title");
+            console.log(eventTitle);
+            eventTitle.innerHTML = prefixes[Math.floor(Math.random() * prefixes.length)];
+        });
+    </script>
+    <meta charset="utf-8" />
+    <title>Advent of Code 2019</title>
+    <!--[if lt IE 9]><script src="/static/html5.js"></script><![endif]-->
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:300&subset=latin,latin-ext' rel='stylesheet'
+        type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://adventofcode.com/static/style.css?20" />
+    <link rel="stylesheet alternate" type="text/css" href="https://adventofcode.com/static/highcontrast.css?0"
+        title="High Contrast" />
+    <link rel="shortcut icon" href="https://adventofcode.com/favicon.png" />
+</head>
+
+<header>
+    <div>
+        <h1 class="title-global"><a href="">Advent of Code @ Our Studio</a></h1>
+    </div>
+    <div>
+        <h1 class="title-event">&nbsp;&nbsp;&nbsp;<span id="event-title" class="title-event-wrap"></span><a
+                href="">"2019/11/10"</a><span class="title-event-wrap">;</span></h1>
+    </div>
+
+</header>
+
+<div id="sidebar">
+    <div id="sponsor">
+        <div class="quiet"><a href="mailto:hello@ourstudio.se">hello@ourstudio.se</a></div>
+    </div>
+</div>
+<main>
+    <article>
+        <p>
+            Join us for some <em>coding</em>, <em>breakfast</em> and <em>chill</em>.
+        </p>
+        <p>
+            <em>Idea</em>: We sit together and tries to solve one several challanges posted on the <a
+                href="https://adventofcode.com" target="blank">Advent of Code</a> site.
+            We will discuss the problem, considering solutions in various ways and hopefully solve the problem <em><a
+                    href="https://ourstudio.se">our</a></em> way.
+        </p>
+        <p><em>Advent of Code</em> is an Advent calendar of small programming puzzles for a variety of skill sets and
+            skill levels that can be solved in <a href="https://github.com/search?q=advent+of+code">any</a> programming
+            language you like. People use them as a <a href="/leaderboard">speed contest</a>, <a
+                href="https://y3l2n.com/2018/05/09/interview-prep-advent-of-code/">interview</a> <a
+                href="https://twitter.com/dznqbit/status/1037607793144938497">prep</a>, <a
+                href="https://twitter.com/pgoultiaev/status/950805811583963137">company training</a>, <a
+                href="https://gitlab.com/imhoffman/fa19b4-mat3006/wikis/home">university</a> <a
+                href="https://www.gribblelab.org/scicomp2018/">coursework</a>, <a
+                href="https://twitter.com/mrdanielklein/status/936267621468483584">practice</a> <a
+                href="https://comp215.blogs.rice.edu/">problems</a>, or to <a
+                href="https://www.reddit.com/r/adventofcode/search?q=flair%3Aupping&amp;restrict_sr=on">challenge each
+                other</a>.</p>
+        <p>More info =><a href="https://adventofcode.com/2019/about">[Read more]</a> </p>
+        <p>We are => <a
+                href="https://adventofcode.com/2019/about">[OurStudio]</a></p>
+    </article>
+</main>
+</body>
+
+</html>
