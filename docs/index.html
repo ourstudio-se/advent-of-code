@@ -4,7 +4,8 @@
 <head>
     <script>
         document.addEventListener("DOMContentLoaded", (_) => {
-            console.log("here")
+
+            console.log("https://github.com/ourstudio-se/advent-of-code");
             const prefixes = [
                 "$date=",
                 "&date=",
@@ -15,7 +16,6 @@
             ];
 
             const eventTitle = document.getElementById("event-title");
-            console.log(eventTitle);
             eventTitle.innerHTML = prefixes[Math.floor(Math.random() * prefixes.length)];
         });
     </script>
